@@ -41,7 +41,7 @@ namespace UnleveledOblivion
                     {
                         CalculateNPCLevel(npc, state.LinkCache, isStatic: true, npcLevelsFromFile);
                     }
-                    ﻿if (npc.AIData == null || (npc.BuySellServiceFlag == 0 && npc.AIData.MaximumTrainingLevel == 0))
+                    ﻿if (npc.AIData == null || (Npc.BuySellServiceFlag == 0 && npc.Teaches == 0))
                     {
                         npc.Configuration.Flags |= Npc.NpcFlag.AutoCalcStats;
                     }
